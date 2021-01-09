@@ -182,7 +182,7 @@ export default function Showdata(props) {
         }
         }
     }, [launch, state.Year, query, sta, state.land, state.launch, launchs, land])
-//set year when click
+//set year When click
     const Setyear = (e) => {
         let aa = e.target.dataset.year
         let bb = e.target.dataset.index
