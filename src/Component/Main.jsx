@@ -9,7 +9,8 @@ export default function Main(props) {
     const [sta,setStat]=useState([])
     const[year,setYear]=useState([])
     const state=Loaddata()
-useEffect(()=>{     
+useEffect(()=>{   
+    //Load Full api data  
     setStat(state.Year)
       const sd=sta.map((a)=>{
           return a.launch_year

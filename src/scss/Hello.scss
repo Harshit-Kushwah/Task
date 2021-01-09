@@ -78,7 +78,7 @@ h2{margin: 0px; font-size:$vl+6}
 margin-right: $vl+3; margin-bottom: $vl;&:nth-child(even){margin-right: 0;}&:hover{background:#7cba01; cursor: pointer;}width:60px; text-align:center;a{color:$col;padding:07px $vl+4; display:block}}width:133px; display:table; margin:0px auto; padding-left: 0; margin-bottom: $vl+1;
 .active{background:#7cba01;}
 }
-.all{li{background:$pcol1;padding:07px $vl+4; float: left; display:inline;  font-weight:700; @include bor(4px); 
+.all{li{a{color:$col;}background:$pcol1;padding:07px $vl+4; float: left; display:inline;  font-weight:700; @include bor(4px); 
 margin-right: $vl+3; margin-bottom: $vl;&:nth-child(even){margin-right: 0;}&:hover{background:#7cba01; cursor: pointer;}width:60px; text-align:center;}width:133px; display:table; margin:0px auto; padding-left: 0; margin-bottom: $vl+1;
 .active{background:#7cba01;}
 }
@@ -218,6 +218,8 @@ flex-direction:column;a{background:$pcol2; padding: $vl $vl+5; color:$wht; @incl
             min-height:auto $imp;max-height:100% $imp;
         }padding-right:$vl $imp}
         }
-        #error{width:100%; padding-right:$vl;}
+        #error{width:100%; padding-right:$vl;
+        img{width:100%}
+        }
     }
 }
