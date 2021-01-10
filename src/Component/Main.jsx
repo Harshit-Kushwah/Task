@@ -4,6 +4,7 @@ import Loaddata from './load-data'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import defaultimg from '../Images/default.jpg'
+import {Helmet} from 'react-helmet'
 import $ from 'jquery'
 export default function Main(props) {
     const [sta,setStat]=useState([])
@@ -27,9 +28,12 @@ else{
     $("#root").removeClass("is_blir").addClass("showdata")   
 }
 },[state.Year,sta])
- 
+    const title ="SpaceX Launch Programs"
     return (
         <>
+        <Helmet>
+            <title>{title}</title>
+        </Helmet>
         <header>
                 <div className="grid-12 pt-1">
              <h1>SpaceX Launch Programs</h1>

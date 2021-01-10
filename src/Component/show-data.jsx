@@ -4,6 +4,7 @@ import $ from 'jquery'
 import Loaddata from './load-data'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Helmet } from 'react-helmet'
 import defaultimg from '../Images/default.jpg'
 export default function Showdata(props) {
     const [sta, setStat] = useState([])
@@ -261,9 +262,13 @@ else{
     }
 }
 }
-
+    const title =`SpaceX Launch Programs ${query}`
     return (
-        <>          <header>
+        <>    
+        <Helmet>
+            <title>{title}</title>
+        </Helmet>
+              <header>
             <div className="grid-12 pt-1">
                 <h1>SpaceX Launch Programs</h1>
             </div>
