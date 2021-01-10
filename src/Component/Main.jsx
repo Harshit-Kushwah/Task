@@ -32,7 +32,7 @@ else{
         <>
         <header>
                 <div className="grid-12 pt-1">
-             <h1>SpceX Launch Programs</h1>
+             <h1>SpaceX Launch Programs</h1>
              </div>   
         </header>
 <section className="main">
